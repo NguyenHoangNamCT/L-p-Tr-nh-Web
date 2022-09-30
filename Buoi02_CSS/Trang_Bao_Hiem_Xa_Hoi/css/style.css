@@ -1,0 +1,70 @@
+#NoiDung{
+    width: 960px;
+    margin: 0 auto 0 auto;
+}
+
+#DauTrang{
+    width: 960px;
+    height: 192px;
+    background: url("../images/banner.jpg");
+}
+
+#GiuaTrang{
+    width: 960px;
+}
+
+#BenTrai{
+    width: 220px;
+    float: left;
+}
+
+#BenTrai h3{
+    background: url(../images/h3_bg.gif);
+    height: 34px;
+    color: white;
+    padding: 9px 0 0 5px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+#BenTrai ul{
+    list-style-image: url(../images/ul.gif);
+    border: 1px solid brown;
+    margin-top: 0px;
+}
+
+#BenPhai{
+    width: 730px;
+    float: right;
+}
+
+#BenPhai h3{
+    color: brown;
+    background: url(../images/content_title_bar.png) no-repeat;
+    height: 34px;
+    padding: 8px 0 0 33px;
+    box-sizing: border-box;
+}
+
+#BenPhai p{
+    text-align: justify;
+}
+
+#BenPhai .TacGia{
+    text-align: right;
+    font-weight: bold;
+}
+
+#CuoiTrang{
+    width: 960px;
+    height: 50px;
+    background: url("../images/footer.jpg");
+    clear: both;
+}
+
+#CuoiTrang p{
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
