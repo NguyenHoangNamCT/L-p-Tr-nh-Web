@@ -1,0 +1,83 @@
+/*
+áp dụng cho ai {
+    áp dụng cái gì
+}
+*/
+main {
+    width: 900px;
+    margin: 0 auto 0 auto; 
+}
+
+header {
+    width: 900px;
+    height: 143px;
+    background: url("../images/banner.jpg"); /* đặt hình ảnh làm nền của header */
+    
+}
+
+section {
+    width: 900px;
+}
+
+aside {
+    width: 205px;
+    float: left;
+}
+
+aside h2 {
+    color: blue;
+    background: url(../images/t_l.gif);
+    height: 30px;
+    font-size: 18px;
+    padding: 5px 0 0 5px; /*thêm khoảng không ở trên và bên phải*/
+    box-sizing: border-box; /*Thêm khoảng không nhưng không tăng kích thước*/
+    margin-bottom: 0; /*làm mất lề dưới*/
+}
+
+aside ul{
+    list-style: url(../images/li.gif);
+    border: 1px solid #1e90ff;
+    padding: 5px 0 5px 25px;
+    margin-top: 0; /*làm mất lề trên*/
+}
+
+a:link {
+    color: #1e90ff;
+    text-decoration: none; /*không gạch chân*/
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: gray;
+}
+
+article {
+    width: 685px;
+    float: right;
+    background: url("../images/bg_post.gif") no-repeat right bottom; /*không lặp lại
+                                                                       trục x của tấm hình canh sát right của article
+                                                                       trục y của tấm hinh canh sát bottom của article 
+                                                                        */        
+}
+
+article p {
+    text-align: justify;
+}
+
+footer  {
+    width: 900px;
+    height: 50px;
+    background: #1e90ff; /*Đặt màu 1e90ff làm nền của footer*/
+    clear: both;
+}
+
+footer p{
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center; /*canh giữa*/
+}
