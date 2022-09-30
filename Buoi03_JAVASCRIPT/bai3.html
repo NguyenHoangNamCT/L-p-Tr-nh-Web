@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hiển thị ngày tháng năm hiện hành ra màn hình</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			var t = new Date();
+			var ngay = t.getDate(); //1-31
+			var thang = t.getMonth() + 1; //0-12
+			var nam = t.getFullYear(); 
+
+			document.write('<h1 align="center">' + 
+				'Hôm nay là ngày ' + ngay + 
+				' Tháng '+ thang + 
+				' năm ' + nam +'</h1>');
+		</script>
+	</body>
+</html>

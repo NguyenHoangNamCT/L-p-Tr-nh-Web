@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cau 4: Form dang nhap</title>
+</head>
+<body>
+	<script>
+		/* cú pháp khai báo hàm
+			function [tên hàm]{
+
+			}
+		*/
+		function LayThongTinTuForm(){
+			//cách 1
+			var tenDangNhap = document.getElementsByName('txtTenDangNhap').value;
+
+			//cach 2
+		}
+	</script>
+
+	<form action="">
+		<table>
+			<tr>
+				<td><p>Tên đăng nhập: </p></td>
+				<td><input type="text" name="txtTenDangNhap"></td>
+				<td><p>(nhiều hơn 6 ký tự)</p></td>
+			</tr>
+			<tr>
+				<td><p>Mật khẩu: </p></td>
+				<td><input type="password" name="txtMatKhau"></td>
+			</tr>
+			<tr>
+				<td><p>Nhập lại mật khẩu: </p></td>
+				<td><input type="password" name="txtNhapLaiMatKhau"></td>
+			</tr>
+			<tr>
+				<td><button type="submit">kiểm tra</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 4</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			function KiemTra()
+			{
+				//lấy thông tin từ 3 ô
+				//cách 1
+				var tdn = f.txtTenDangNhap.value;
+				//cách 2
+				var mk = f.txtMatKhau.value;
+				var nlmk = f.txtNhapLaiMatKhau.value;
+				if(tdn == "" || mk == ""|| nlmk == "")
+				{
+					alert("Phải nhập đầu đủ thông tin");
+					return false;	
+				}
+				if(tdn.length <= 6)
+				{
+					alert("Tên đăng nhập phải lớn hơn 6 ký tự");
+					return false;
+				}
+				if(mk != nlmk)
+				{
+					alert("Một khẩu nhập lại không khớp");
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<form name="f">
+			<table>
+				<tr>
+					<td>Tên đăng nhập</td>
+					<td><input type="text" name="txtTenDangNhap"></td>
+					<td>(nhiều hơn 6 ký tự)</td>
+				</tr>
+				<tr>
+					<td>Mật khẩu</td>
+					<td><input type="password" name="txtMatKhau"></td>
+				</tr>
+				<tr>
+					<td>Nhập lại mật khẩu: </td>
+					<td><input type="password" name="txtNhapLaiMatKhau"></td>
+				</tr>
+			</table>
+			<button type="submit" onclick="return KiemTra()">Kiểm tra nè</button>
+		</form>
+	</body>
+</html-->
