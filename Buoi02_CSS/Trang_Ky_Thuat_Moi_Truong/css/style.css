@@ -11,8 +11,7 @@ main {
 header {
     width: 900px;
     height: 143px;
-    background: url("../images/banner.jpg"); /* đặt hình ảnh làm nền của header */
-    
+    background: url("../images/banner.jpg"); /* đặt hình ảnh làm nền của header */ 
 }
 
 section {

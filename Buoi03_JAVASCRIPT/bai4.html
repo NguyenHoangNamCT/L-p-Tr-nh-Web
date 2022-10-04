@@ -12,14 +12,34 @@
 			}
 		*/
 		function LayThongTinTuForm(){
-			//cách 1
-			var tenDangNhap = document.getElementsByName('txtTenDangNhap').value;
-
+			//cách 1: Thầy nói làm được nhưng khi làm lại không đưỢc :D
+			// var tenDangNhap = document.getElementsByName('txtTenDangNhap').value;
+			// var matKhau = document.getElementsByName('txtMatKhau').value;
+			// var nhapLaiMatKhai = document.getElementsByName('txtNhapLaiMatKhau').value;
+			
 			//cach 2
+			var tenDangNhap = f.txtTenDangNhap.value;
+			var matKhau = f.txtMatKhau.value;
+			var nhapLaiMatKhai = f.txtNhapLaiMatKhau.value;
+
+			// Thông báo lỗi khi người dùng bỏ trống 1 trong 3 ô 
+			if(tenDangNhap == "" || matKhau == "" || nhapLaiMatKhai == ""){
+				alert("Vui lòng nhập đầy đủ thông tin");
+				return false;
+			}
+			if(tenDangNhap.length < 6){
+				alert("Phải nhập tên đăng nhập lớn hơn 6 ký tự");
+				return false;
+			}
+			if(matKhau != nhapLaiMatKhai){
+				alert("Nhập lại mật khẩu không khớp");
+				return false;
+			}
+			return true;
 		}
 	</script>
 
-	<form action="">
+	<form name="f">
 		<table>
 			<tr>
 				<td><p>Tên đăng nhập: </p></td>
@@ -35,7 +55,7 @@
 				<td><input type="password" name="txtNhapLaiMatKhau"></td>
 			</tr>
 			<tr>
-				<td><button type="submit">kiểm tra</button></td>
+				<td><button type="submit" onclick="return LayThongTinTuForm()">kiểm tra</button></td>
 			</tr>
 		</table>
 	</form>
