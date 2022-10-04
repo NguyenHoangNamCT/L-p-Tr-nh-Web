@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 5</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="HienThi"></div>
+		<script>
+			function ThoiGian(){
+				var time = new Date();
+				var gio = time.getHours();
+				var phut = time.getMinutes();
+				var giay = time.getSeconds();
+
+				//document.write("Bây giờ là " + gio + " giờ " + phut + " phút " + giay + " giây"); Không dùng document.write đưỢc vì mỗi lần gọi hàm nó in thêm 1 hàng không hợp lý
+				document.getElementById("HienThi").innerHTML = "Bây giờ là " + gio + " giờ " + phut + " phút " + giay + " giây";//tức là ghi chuỗi vào giữa thẻ có id là "Hiển thị"
+																																// trong trương hợp này tương đương vớI lệnh html: <div id="HienThi"> "Bây giờ là " + gio + " giờ " + phut + " phút " + giay + " giây" </div>
+			}
+			//setTimeout(ThoiGian, 1000); Gọi hàm ThoiGian sau 1000 mili giây nhưng chỉ gọi một lần
+			setInterval(ThoiGian, 1000); //Gọi hàm ThoiGian sau 1000 mili giây
+		</script>
+	</body>
+</html>
