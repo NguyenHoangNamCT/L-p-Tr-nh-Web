@@ -48,14 +48,14 @@
 				}
 				var arrCan = ['Canh','Tân','Nhâm','Quý','Giáp','Ất','Bính','Đinh','Mậu','Kỷ'];
 				var arrChi = ['Thân','Dậu','Tuất','Hợi','Tý','Sửu','Dần','Mẹo','Thìn','Tỵ','Ngọ','Mùi'];
-				
+
 				//Tính can và chi
 				var can = namDuongLich % 10, chi = namDuongLich % 12;
 
 				//Hiển thị kết quả
 				TenForm.txtNamAmLich.value = arrCan[can] + " " + arrChi[chi];
-				TenForm.HinhConGiap.src = "images/" + chi + ".jpg"; 
-				return true;				
+				TenForm.HinhConGiap.src = "images/" + chi + ".jpg";
+				return true;
 			}
 		</script>
 	</head>

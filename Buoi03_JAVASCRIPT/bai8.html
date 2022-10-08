@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bài 8</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				font-family: Tahoma;
+				font-size: 11pt;
+			}
+			select {
+				font-size: 11pt;
+				width: 100px;
+				padding: 2px;
+			}
+		</style>
+
+		<script>
+			function DoiMauNenVaChu(){
+				// document.getElementById("idH1").style.color = f.optchu.value;
+				document.body.style.color = f.optchu.value; 
+
+				// document.getElementById("idBody").style.background = f.optnen.value;
+				document.body.style.background = f.optnen.value;
+			}
+		</script>
+	</head>
+	<body id="idBody">
+		<h1 id="idH1">Đổi màu nền và màu chữ</h1>
+		<form name="f">
+			<table>
+				<tr>
+					<td>Chọn màu nền</td>
+					<td>
+						<select name="optnen" onchange="DoiMauNenVaChu()">
+							<option value="white">White</option>
+							<option>Pink</option>
+							<option>Lightblue</option>
+							<option>Lightgreen</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Chọn màu chữ</td>
+					<td>
+						<select name="optchu" onchange="DoiMauNenVaChu()">
+							<option value="black">Black</option>
+							<option>Red</option>
+							<option>Blue</option>
+							<option>Green</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
