@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: tahoma;
+            font-size: 11pt;
+        }
+
+        table{
+            border-collapse: collapse;
+            background: url(images/bgbottom_yellow.jpg) repeat-x right bottom;
+            border: 1px solid red;
+        }
+        
+        th{
+            background-color: red;
+            color: white;
+            font-size: 13pt;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        input{
+            padding: 5px;
+            width: 300px;
+            border: cyan;
+            background-color: lightblue;
+        }
+
+        button{
+            padding: 5px 20px 5px 20px;
+            margin: 5px;
+            background: 1px red;
+            color: white;
+            border: green;
+        }
+    </style>
+    <script src="js.js"></script>
+</head>
+<body>
+    <form name="f" method="get">
+        <table align="center" border="0px">
+            <tr>
+                <th colspan="2">THÔNG TIN CÁ NHÂN</th>
+            </tr>
+            <tr>
+                <td>Họ và tên: </td>
+                <td><input type="text" name="txtHoTen" id=""></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ: </td>
+                <td><input type="text" name="txtDiaChi" id=""></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" name="txtEmail" id=""></td>
+            </tr>
+            <tr>
+                <td>Điện thoại: </td>
+                <td><input type="text" name="txtDienThoai" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button onclick="return check()" type="submit">Gởi</button>
+                    <button type="reset">Xoá</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
