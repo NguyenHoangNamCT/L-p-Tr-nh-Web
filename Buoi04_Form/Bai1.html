@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: tahoma;
+            font-size: 11pt;
+        }
+        td{
+            padding: 10px;
+        }
+        th{
+            padding: 10px;
+            font-size: 15pt;
+        }
+        /*Thử nghiệm cú pháp mới*/
+        input[type="text"],[type="password"]{
+            background: lightcyan;
+            padding: 5px;
+            border: 1px dotted red;
+        }
+        button{
+            background-color: LIGHTBLUE;
+            padding: 5px;
+            border: 1PX solid red;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="js/check.js"></script>
+</head>
+<body>
+    <form name="f">
+        <table align="center" border="1px" style="border-collapse: collapse;">
+            <tr>
+                <th colspan="2">Thông tin đăng nhập</th>
+            </tr>
+            <tr>
+                <td>Tên đăng nhập: </td>
+                <td><input type="text" name="txtTDN"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" name="txtPw"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><button type="submit" onclick="return check()">Đăng nhập</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
