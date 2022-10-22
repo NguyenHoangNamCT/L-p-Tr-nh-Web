@@ -22,11 +22,11 @@
 			function tinhTienPhong(){
 				var soNgay = f.songay.value;
 				var loaiPhong = f.loaiphong.value;
-				// var tienPhong;
+				var tienPhong;
 				if(isNaN(soNgay) || soNgay < 1)
-					alert("Số ngày không được bỏ trống, số ngày phải là số và phải lớn hơn 0");
+					alert("số ngày phải là SỐ và phải lớn hơn 0");
 				else if(loaiPhong == 1)
-					var tienPhong = soNgay * 6;
+					tienPhong = soNgay * 6;
 				else if(loaiPhong == 2)
 					tienPhong = soNgay * 9;
 				
