@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        th{
+            background: blue;
+            color: white;
+        }
+        td{
+            padding: 10px;
+        }
+        input[type="text"]{
+            width: 300px;
+            background: cyan;
+            border: 1px solid red;
+        }
+        select{
+            background: cyan;
+            border: 1px solid red;
+        }
+        textarea{
+            background: cyan;
+            border: 1px solid red;
+        }
+        button{
+            background: cyan;
+            border: 1px solid red;
+        }
+        table{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+    <script src="check.js">
+
+    </script>
+</head>
+<body>
+    <form action="https://fit.agu.edu.vn/demo.php" method="post" name="f">
+        <table align="center" border="0px">
+            <tr>
+                <th colspan="2">THÔNG TIN ĐĂNG KÝ</th>
+            </tr>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="txtHoTen"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh:</td>
+                <td>
+                    <select name="Ngay">
+                        <option value="">Ngày</option>
+                        <script>
+                            for(var i = 1; i < 32; i++){
+                                document.write("<option>");
+                                document.write(i+"")
+                                document.write("</option>");
+                            }
+                        </script>
+                    </select>
+                    <select name="Thang">
+                        <option value="">Tháng</option>
+                        <script>
+                            for(var i = 1; i < 13; i++){
+                                document.write("<option>");
+                                document.write(i+"")
+                                document.write("</option>");
+                            }
+                        </script>
+                    </select>
+                    <select name="Nam">
+                        <option value="">năm</option>
+                        <script>
+                            var d = new Date();
+                            var NamHienTai = d.getFullYear();
+                            
+                            for(var i = 1970; i <= NamHienTai; i++){
+                                document.write("<option>");
+                                document.write(i+"")
+                                document.write("</option>");
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td>
+                    <input type="radio" name="GioiTinh" value="Nam" checked>Nam
+                    <input type="radio" name="GioiTinh" value="Nữ">Nữ
+                    <input type="radio" name="GioiTinh" value="Chưa rõ">Chưa rõ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp: </td>
+                <td>
+                    <select name="NgheNghiep">
+                        <option value="">--Chọn--</option>
+                        <option>Luật sư</option>
+                        <option>Kỹ sư</option>
+                        <option>Bác sĩ</option>
+                        <option>Giáo viên</option>
+                        <option selected>Sinh viên</option>
+                        <option>Nghề khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú: </td>
+                <td><textarea name="GhiChu"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" onclick="return kiemtra()">Đăng ký</button>
+                    <button type="reset">xoá làm lại</button>
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
