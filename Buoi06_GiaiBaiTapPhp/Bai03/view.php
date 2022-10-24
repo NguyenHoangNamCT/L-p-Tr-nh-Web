@@ -49,22 +49,19 @@
 </style>
 </head>
 <body>
-<!-- Mẫu trình bày sản phẩm -->
-
     <?php
-        $link = mysqli_connect('127.0.0.1', 'root', 'vertrigo');
+        $link = mysqli_connect('localhost', 'root', 'vertrigo');
         mysqli_select_db($link, 'dulieu');
-        $kq = mysqli_query($link, 'select * from sanpham');
-        while($dong = mysqli_fetch_array($kq))
-        {
-            echo 
-            '
-            <div class="sanpham">
-                <a href="#"><img src="'.$dong['hinhanh'].'"></a><br>
-                <a href="#" class="ten">'.$dong['tensp'].'</a><br>
-                <a href="#" class="gia">'.$dong['gia'].'</a><br>
-                <p><a href="#">Chi tiết</a> | <a href="#">Đặt mua</a></p>
-            </div>
+        mysqli_set_charset($link, 'latin1');
+        $results = mysqli_query($link, 'select * from sanpham');
+        while($dong = mysqli_fetch_array($results)){
+            echo'
+                <div class="sanpham">
+                    <a href="#"><img src="'.$dong['hinhanh'].'"></a><br>
+                    <a href="#" class="ten">'.$dong['tensp'].'</a><br>
+                    <a href="#" class="gia">'.number_format($dong['gia']).'</a><br>
+                    <p><a href="#">Chi tiết</a> | <a href="#">Đặt mua</a></p>
+                </div>
             ';
         }
     ?>
