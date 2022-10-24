@@ -100,7 +100,7 @@
 
 <body>
 	<a href="#" id="TrangThai">Ẩn form</a>
-	<form name ="f" method="post	" action="xuly.php">
+	<form name ="f" method="post" action="xuly.php">
 		<table border="1" cellpadding="2" align="center">
 			<tr>
 				<td colspan="2" class="TieuDe">LIÊN HỆ GÓP Ý</td>
