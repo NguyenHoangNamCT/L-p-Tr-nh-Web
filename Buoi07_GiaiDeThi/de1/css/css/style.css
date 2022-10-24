@@ -1,0 +1,104 @@
+﻿body{
+	background-color: silver;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+h1{
+	color: #009933;
+	font-size: 14pt;
+}
+a{
+	text-decoration: none;
+	color: darkgray;
+}
+
+#khungtrang{
+	margin: auto;
+	width: 804px;
+	background-color: white;
+}
+#phantren{
+	height: 100px;
+}
+#phanmenungang{
+	height: 25px;
+	background-color: #009933;
+	text-align: center;
+	color: white;
+}	
+#phantrai{
+	float: left;
+	width: 150px;
+	border-right: thin solid #009933;
+}
+#phangiua{
+	float: left;
+	width: 480px;
+	text-align: justify;
+	padding: 10px;
+}
+#phanphai{
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+#phanduoi{
+	clear: both;	
+	text-align: center;	
+	color: gray;
+	border-top: thin dashed #009933;
+}
+/* ------- Định dạng cho menu liên kết ngang ------- */
+a.menungang{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+a.menungang:hover{
+	color: red;
+	background: blue;
+}
+/* ------- Định dạng cho menu liên kết dọc ------- */
+.khungmenu{
+	padding: 5px;
+}
+.tieudemenu{
+	color: #009933;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: thin dashed #009933;
+}
+a.menu{
+	text-decoration: none;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;	
+	color: darkblue;
+}
+a.menu:hover{
+	background-color: #009933;
+	text-decoration: underline;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* ------- Định dạng cho sp giảm giá ------- */
+.spgiamgia{	
+	padding: 5px;
+	margin: 2px;
+	width: 140px;
+	border: 1px solid #009933;
+	border-radius: 5px;
+	text-align: center;
+}
+.tenhang{
+	color: darkblue;
+	font-weight: bold;
+}
+.giagoc{
+	color: gray;
+	text-decoration: line-through;
+}
+.giagiam{
+	color: red;
+	font-weight: bold;
+}
