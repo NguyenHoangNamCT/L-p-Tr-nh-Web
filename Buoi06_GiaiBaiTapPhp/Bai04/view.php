@@ -6,18 +6,32 @@
 <body>
 <form style="display:inline">		
 	<input type="text" name="txttukhoa" placeholder="Nhập từ khóa">
+	<?php 
+		$link = mysqli_connect('localhost', 'root', 'vertrigo');
+		mysqli_select_db($link, 'qltin');
+		mysqli_set_charset($link, "latin1");
+		$resultsDM = mysqli_query($link, 'select * from danhmuc');
+		$resultsDD = mysqli_query($link, 'select * from diadiem');
+	?>
+	
 	<select>
-		<option>--- Chọn danh mục ---</option>
+		<option value="">--- Chọn danh mục ---</option>
 		<?php
-		// Bổ sung mã PHP
-
+		while($r = mysqli_fetch_array($resultsDM)){
+			echo'
+				<option>'.$r['tendm'].'</option>
+			';
+		}
 		?>
 	</select>
 	<select>
 		<option>--- Chọn địa điểm ---</option>
 		<?php
-		// Bổ sung mã PHP
-
+			while($r = mysqli_fetch_array($resultsDD)){
+				echo'
+					<option>'.$r['tendd'].'</option>
+				';
+			}
 		?>
 	</select>
 	<input type="submit" value="Tìm kiếm">
