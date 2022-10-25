@@ -7,7 +7,7 @@
     $danhmuc = $_POST['txtdm'];
 
     //$sTruyVan = "INSERT INTO `sanpham`(`tensp`, `gia`, `danhmuc`) VALUES ('$ten',$gia,'$danhmuc')";//"ten", va "danhmuc" la chuoi nen bo trong dau nhai "gia" la so nen khoi
-    $sTruyVan = "INSERT INTO `sanpham`(`tensp`, `gia`, `danhmuc`) VALUES ('hoa yasuo',$gia,'thang ngu')";
+    $sTruyVan = "INSERT INTO `sanpham`(`tensp`, `gia`, `danhmuc`) VALUES ('$ten',$gia,'$danhmuc')";
     $results = mysqli_query($link, $sTruyVan);
     
     if($results)
